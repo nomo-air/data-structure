@@ -1,4 +1,4 @@
-package _02_Arrays._01_Array_Basics;
+
 
 public class Main {
     public static void main(String[] args) {
