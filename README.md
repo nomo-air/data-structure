@@ -41,3 +41,13 @@ addLast的均摊复杂度为O(1)
 无处不在的Undo操作（撤销）
 程序调用的系统栈，调用子函数 
 ```
+
+#### 栈的复杂度分析
+```
+ArrayStack<E>       O(1) 均摊
+void push(E)        O(1) 均摊
+E pop()             O(1)
+E peek()            O(1)
+int getSize()       O(1)
+boolean isEmpty()   O(1)
+```
