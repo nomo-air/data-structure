@@ -44,10 +44,26 @@ addLast的均摊复杂度为O(1)
 
 #### 栈的复杂度分析
 ```
-ArrayStack<E>       O(1) 均摊
+ArrayStack<E>       
 void push(E)        O(1) 均摊
-E pop()             O(1)
+E pop()             O(1) 均摊
 E peek()            O(1)
+int getSize()       O(1)
+boolean isEmpty()   O(1)
+```
+
+### 队列 Queue
+```
+队列也是一种线性结构，相比数组，队列对应的操作是数组的子集，只能从一端(队尾)添加元素，只能从另一端(队首)取出元素
+队列是一种先进先出的数据结构（先到先得），First In First Out（FIFO）
+```
+
+#### 数组队列的复杂度分析
+```
+ArrayQueue<E>       
+void enqueue(E)     O(1) 均摊
+E dequeue()         O(n)
+E front()           O(1)
 int getSize()       O(1)
 boolean isEmpty()   O(1)
 ```
