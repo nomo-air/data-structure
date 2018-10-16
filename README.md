@@ -15,3 +15,18 @@
 改：已知索引O(1)，未知索引O(n)
 查：已知索引O(1)，未知索引O(n)
 ```
+
+### 均摊复杂度
+```
+resize：O(n)
+addLast的均摊复杂度为O(1)
+假设capacity = n, n+1次addLast，触发resize，总共进行了2n+1次基本操作，平均每次addLast操作，进行2次基本操作
+```
+
+### 复杂度震荡
+```
+出现问题的原因：removeLast时resizeguoyu着急（Eager）
+解决方案：Lazy
+当size == capacity / 4时，才将capacity减半
+```
+
