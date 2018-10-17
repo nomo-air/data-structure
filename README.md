@@ -85,3 +85,20 @@ boolean isEmpty()   O(1)
 优点：真正的动态数据结构，不需要处理固定容量的问题
 缺点：丧失了随机访问的能力
 ```
+
+#### 链表的时间复杂度分析
+```
+添加操作                 O(n)
+    addLast(e)          O(n)
+    addFirst            O(1)
+    add(index,e)        O(n/2) = O(n)
+删除操作                 O(n)
+    removeLast(e)       O(n)
+    removeFirst(e)      O(1)
+    remove(index,e)     O(n/2) = O(n)
+修改操作                 O(n)
+    set(index,e)        O(n)
+查找操作                 O(n)
+    get(e)              O(n)
+    contains(e)         O(n)
+```
