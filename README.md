@@ -77,3 +77,11 @@ E getFront()        O(1)
 int getSize()       O(1) 
 boolean isEmpty()   O(1)
 ```
+
+### 链表(Linked List)
+```
+数据存储在节点(Node)中
+动态数组、栈、队列底层依托静态数组，靠resize解决固定容量问题
+优点：真正的动态数据结构，不需要处理固定容量的问题
+缺点：丧失了随机访问的能力
+```
