@@ -102,3 +102,8 @@ boolean isEmpty()   O(1)
     get(e)              O(n)
     contains(e)         O(n)
 ```
+
+#### 递归
+```
+本质上，将原来的问题，转化为更小的同一个问题
+```
