@@ -108,3 +108,12 @@ boolean isEmpty()   O(1)
 本质上，将原来的问题，转化为更小的同一个问题
 递归调用是有代价的：函数调用 + 系统栈空间
 ```
+
+### 集合
+h代表树的高度
+```
+                LinkedListSet       BSTSet  平均     最差
+增add           O(n)                 O(h)   O(logn)  O(n)
+查contains      O(n)                 O(h)   O(logn)  O(n)
+删remove        O(n)                 O(h)   O(logn)  O(n)
+```
