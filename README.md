@@ -110,10 +110,38 @@ boolean isEmpty()   O(1)
 ```
 
 ### 集合
+```
+Set<E>
+void add(E)
+void remove(E)
+boolean contains(E)
+int getSize()
+boolean isEmpty
+```
 h代表树的高度
 ```
                 LinkedListSet       BSTSet  平均     最差
 增add           O(n)                 O(h)   O(logn)  O(n)
 查contains      O(n)                 O(h)   O(logn)  O(n)
 删remove        O(n)                 O(h)   O(logn)  O(n)
+```
+
+### 映射
+```
+Map<K,V>
+void add(K,V)
+V remove(K)
+boolean contains(K)
+V get(K)
+void set(K,V)
+int getSize()
+boolean isEmpty()
+```
+```
+                LinkedListMap       BSTMap  平均      最差
+ 增 add         O(n)                 O(h)    O(logn)  O(n)
+ 删 remove      O(n)                 O(h)    O(logn)  O(n)
+ 改 set         O(n)                 O(h)    O(logn)  O(n)
+ 查 get         O(n)                 O(h)    O(logn)  O(n)
+ 查 contains    O(n)                 O(h)    O(logn)  O(n)
 ```
