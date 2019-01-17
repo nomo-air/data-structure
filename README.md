@@ -228,7 +228,8 @@ union(p, q) // 合并元素
 isConnected(p, q) // 两个元素是否相连
 
 ```
+quick find
 ```
-Quick Find 时间复杂度O(1)
-           下的Union时间复杂度O(n2) 
-```
+unionElements(p, q)
+isConnected(p, q)
+``` 
