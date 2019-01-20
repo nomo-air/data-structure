@@ -233,3 +233,9 @@ quick find
 unionElements(p, q)
 isConnected(p, q)
 ``` 
+
+### 平衡二叉树
+```
+对于任意一个节点，左子树和右子树的高度差不能超过1
+平衡二叉树的高度和节点数量之间的关系也是O(logn)的
+```
