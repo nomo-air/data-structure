@@ -77,18 +77,18 @@ removeLast时resize过于着急（Eager）
 只能从一端添加元素，也只能从一端取出元素
 这一端称为栈顶
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-1.png"   />
 栈是一种后进先出的数据结构<br>
 Last In First Out（LIFO）
 
 #### 常见应用
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-3.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-4.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-5.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/2-5.png"   />
 
 #### 栈的复杂度分析
 ```
@@ -107,13 +107,13 @@ boolean isEmpty()   O(1)
 只能从一端（队尾）添加元素，只能从另一端（队首）取出元素
 队列是一种先进先出的数据结构（先到先得），First In First Out（FIFO）
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/3-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/3-1.png"   />
 
 删除队首元素（a）
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/4-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/4-1.png"   />
 
 删除后
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/4-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/4-2.png"   />
 
 #### 数组队列的复杂度分析
 ```
@@ -127,15 +127,15 @@ boolean isEmpty()   O(1)
 
 ### 循环队列
 front == tail 队列为空
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/5-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/5-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/5-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/5-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/5-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/5-3.png"   />
 
 (tail + 1) % c == front 队列满
 capacity中，浪费了一个空间
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/5-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/5-4.png"   />
 
 #### 循环队列的复杂度分析
 ```
@@ -163,33 +163,33 @@ class Node {
 ```
 
 #### 在链表头添加元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-3.png"   />
 
 在索引为2的地方添加元素666
 关键点在于找到要添加节点的前一个节点
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-4.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-5.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-5.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-6.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-6.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-7.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-7.png"   />
 
 顺序很重要
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-8.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/6-8.png"   />
 
 #### 链表(虚拟头节点)
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/7-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/7-1.png"   />
 
 #### 删除索引为2位置的元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/7-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/7-2.png"   />
 
 链表元素删除常见的错误
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/7-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/7-3.png"   />
 
 #### 链表的时间复杂度分析
 ```
@@ -210,12 +210,12 @@ class Node {
 ```
 
 什么情况下使用链表
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/7-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/7-4.png"   />
 
 使用链表实现栈
 
 使用链表实现队列
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/8-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/8-1.png"   />
 
 #### 双链表
 单链表删除末尾元素复杂度任然是O(n)，可以用双链表来解决
@@ -225,11 +225,11 @@ class Node {
     Node next, prev;
 }
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/9-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/9-1.png"   />
 
 #### 循环链表
 循环链表的好处是进一步把操作进行了统一，比如向链表结尾添加元素，不需要用tail一直指着结尾，我们用循环链表，直接在dummyHead前添加元素就是在链表末尾添加元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/11-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/11-1.png"   />
 
 #### 数组链表
 ```
@@ -238,7 +238,7 @@ class Node {
     int next;
 }
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/12-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/12-1.png"   />
 
 
 
@@ -248,10 +248,10 @@ class Node {
 递归调用是有代价的：函数调用 + 系统栈空间
 ```
 链表有天然的递归性质
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/10-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/10-1.png"   />
 
 #### 删除链表中元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/10-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/10-2.png"   />
 
 ### 二叉树
 ```
@@ -273,7 +273,7 @@ class Node {
     Node right;
 }
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/13-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/13-1.png"   />
 
 #### 二分搜索树
 Binary Search Tree
@@ -285,10 +285,10 @@ Binary Search Tree
 每一棵子树也是二分搜索树
 储存的元素必须有可比较性    
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/14-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/14-1.png"   />
 
 #### 二分搜索树添加元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/14-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/14-2.png"   />
 ```
 我们的二分搜索树不包含重复元素
 如果想包含重复元素的话，只需要定义：
@@ -297,7 +297,7 @@ Binary Search Tree
 ```
 
 #### 二分搜索树的遍历
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/14-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/14-3.png"   />
 
 ```
 前序遍历 // 28，16，13，22，30，29，42
@@ -306,7 +306,7 @@ Binary Search Tree
 ```
 
 二分搜索树前序遍历的非递归实现
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/15-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/15-1.png"   />
 ```
 28入栈
 28出栈
@@ -317,9 +317,9 @@ Binary Search Tree
 ```
 
 #### 二分搜索树的层序遍历
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/16-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/16-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/16-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/16-2.png"   />
 
 ```
 28入队
@@ -331,7 +331,7 @@ Binary Search Tree
 
 #### 深度优先和广度优先
 二分搜索树的最小值和最大值
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/17-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/17-1.png"   />
 
 #### 二分搜索树删除节点
 ```
@@ -346,11 +346,11 @@ s -> rigth = delMin(d -> right)
 s -> left = d -> left
 删除d，s是新的子树的根
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/18-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/18-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/18-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/18-2.png"   />
 或者找s的前驱
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/18-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/18-3.png"   />
 
 #### floor & ceil
 ```
@@ -359,7 +359,7 @@ floor // 比45小的最大的元素
 ceil // 比45大的最小的元素
 与前驱和后继不同的是floor和ceil可以不在二分搜索树中
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/19-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/19-1.png"   />
 
 #### rank & select
 ```
@@ -367,13 +367,13 @@ rank // 58是排名第几的元素？
 select // 排名第10的元素是谁？
 ```
 #### 维护size的二分搜索树
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/20-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/20-1.png"   />
 
 #### 维护depth的二分搜索树
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/21-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/21-1.png"   />
 
 #### 支持重复元素的二分搜索树
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/22-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/22-1.png"   />
 
 ### 前驱 & 后继
 ```
@@ -413,16 +413,16 @@ h代表树的高度
 删remove        O(n)                 O(h)   O(logn)  O(n)
 ```
 #### 二分搜索树的复杂度分析
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/23-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/23-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/23-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/23-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/23-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/23-3.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/23-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/23-4.png"   />
 
 logn和n的差距
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/24-5.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/24-5.png"   />
 
 ```
 有序集合中的元素具有顺序性 // 基于搜索树的实现
@@ -494,7 +494,7 @@ boolean isEmpty()
 ```
 把元素顺序排成树的形状
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/25-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/25-1.png"   />
 
 ### 二叉堆
 ```
@@ -504,7 +504,7 @@ boolean isEmpty()
 ```
 
 用数组储存二叉堆
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/25-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/25-2.png"   />
 ```
 parent(i) = i/2
 left child (i) = 2*i
@@ -512,7 +512,7 @@ right child (i) = 2*i + 1
 ```
 
 偏移之后
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/25-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/25-3.png"   />
 ```
 parent(i) = （i - 1)/2
 left child (i) = 2*i + 1
@@ -523,29 +523,29 @@ right child (i) = 2*i + 2
 Sift Up // 数据上浮
 
 添加元素52
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/26-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/26-1.png"   />
 
 16与52交换位置
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/26-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/26-2.png"   />
 
 41与52交换位置
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/26-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/26-3.png"   />
 
 #### 从堆中取出元素
 Sift Down // 数据下沉
 
 取出根节点62
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-1.png"   />
 
 从左向右的叶子节点16替换根节点62
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-2.png"   />
 
 根节点16与两个孩子节点比较，如果根节点比孩子节点中最大的节点还小，根节点16就和最大的孩子节点52交换位置
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-3.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-4.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-5.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/27-5.png"   />
 
 #### Replace
 replace // 取出最大元素后，放入一个新元素
@@ -560,9 +560,9 @@ heapify（堆化） // 将任意数组整理成堆的形状
 ```
 将数组看成一个二叉堆，找到最后一个非叶子节点，也就是随后一个叶子节点的父亲节点，从这个节点到根节点，一次做Sift Down
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/28-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/28-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/28-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/28-2.png"   />
 
 ```
 将n个元素逐个插入到一个空堆中，算法复杂度是O(nlogn)
@@ -571,7 +571,7 @@ heapify的过程，算法复杂度为O(n)  // todo.这个有点复杂，我还�
 
 #### d插堆
 d-ary heap
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/29-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/29-1.png"   />
 
 索引堆
 二项堆
@@ -579,9 +579,9 @@ d-ary heap
 
 ### 线段树 | 区间树
 Segment Tree
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/30-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/30-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/30-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/30-2.png"   />
 ```
 线段树不是完全二叉树
 线段树是平衡二叉树
@@ -595,14 +595,14 @@ Segment Tree
 ```
 
 懒惰更新
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/31-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/31-1.png"   />
 
 二维线段树
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/32-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/32-1.png"   />
 
 动态线段树
 关注[5-16]
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/33-1-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/33-1-1.png"   />
 
 树状数组
 Binary Index Tree
@@ -624,7 +624,7 @@ RMQ（Range Minimum Query）
 时间复杂度为 O(w)，w为查询单词的长度
 每个节点有26个指向下个节点的指针，26个是因为英文字母的数量
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/34-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/34-1.png"   />
 
 ```
 class Node {
@@ -639,24 +639,24 @@ class Node
     Map<char, Node> next;
 }
 ```
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/34-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/34-2.png"   />
 
 之所以叫前缀树，是在搜索每一个单词，都是在搜索这个单词的前缀
 
 统计词频
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/34-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/34-3.png"   />
 // todo.Tire和映射 
 
 #### 压缩字典树
 Compressed Trie
 Tire的局限性，最大问题：空间
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/35-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/35-1.png"   />
 
 #### 三分搜索树
 Ternary Search Trie
 
 查找dog
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/36-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/36-1.png"   />
 ```
 d = d
 o > k，去k的右边找
@@ -683,10 +683,10 @@ union(p, q) // 合并元素
 isConnected(p, q) -> find(p) == find(q) // 两个元素是否相连
 ```
 #### Quick Find
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/37-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/37-1.png"   />
 
 union(1, 4)
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/37-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/37-2.png"   />
 
 ```
 函数						时间复杂度
@@ -697,39 +697,39 @@ isConnected(p, q)		 O(1)
 #### Quick Union
 标准实现
 union(4, 3)
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/38-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/38-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/38-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/38-2.png"   />
 
 #### 基于size优化
 每棵树节点个数少的指向节点多的
 sz[i] // 记录每棵树节点个数的大小
 union(4, 9)
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/39-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/39-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/39-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/39-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/39-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/39-3.png"   />
 
 #### 基于rank优化
 深度低的指向深度高的
 rank[i] // 表示根节点为i的树的高度
 union(4, 2)
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/40-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/40-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/40-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/40-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/40-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/40-3.png"   />
 
 #### 路径压缩
 Path Compression
 find(4) // 在查询时执行压缩
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/41-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/41-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/41-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/41-3.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/41-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/41-4.png"   />
 
 ### AVL 树
 ```
@@ -738,36 +738,36 @@ find(4) // 在查询时执行压缩
 最早的自平衡二分搜索树
 ```
 平衡因子等于左子树减右子树的高度差
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/42-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/42-1.png"   />
 AVL树的左旋转和右旋转
 ```
 加入节点后，沿着节点向上维护平衡性
 ```
 右旋转
 插入的节点在左孩子的左侧（LL）
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/43-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/43-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/43-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/43-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/43-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/43-3.png"   />
 
 左旋转
 插入的节点在右孩子的右侧（RR）
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/44-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/44-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/44-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/44-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/44-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/44-3.png"   />
 
 插入的节点在左孩子的右侧（LR）
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/45-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/45-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/45-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/45-2.png"   />
 
 插入的节点在右孩子的左侧（RL）
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/46-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/46-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/46-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/46-2.png"   />
 
 ### 2-3数
 ```
@@ -776,13 +776,13 @@ AVL树的左旋转和右旋转
 每个节点有两个孩子或三个孩子 
 ```
 如果插入3-节点
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/47-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/47-1.png"   />
 
 如果插入3-节点，父亲节点为2-节点
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/47-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/47-2.png"   />
 
 如果插入3-节点，父亲节点为3-节点
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/47-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/47-3.png"   />
 
 ### 绝对平衡树
 ```
@@ -802,45 +802,45 @@ AVL树的左旋转和右旋转
 左倾红黑树
 ```
 向红黑树添加元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-1.png"   />
 此时需要进行左旋转
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-2.png"   />
 
 向红黑树中的3-node添加元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-3.png"   />
 颜色反转（flipColors）
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-4.png"   />
 
 右旋转
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-5.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-5.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-6.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-6.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-7.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-7.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-8.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-8.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-9.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-9.png"   />
 
 颜色反转
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-10.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/48-10.png"   />
 
 红黑树与2-3树
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/49-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/49-1.png"   />
 
 左旋转
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-2.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-3.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-3.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-4.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-4.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-5.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/50-5.png"   />
 
 添加元素统一方法
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/51-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/51-1.png"   />
 
 #### 性能
 ```
@@ -866,9 +866,9 @@ Splay Tree
 扩容M选择
 https://planetmath.org/goodhashtableprimes
 #### 链地址法
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-1.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-2.png" height="10" width="10" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-2.png"   />
 
 #### 复杂度分析
 ```
