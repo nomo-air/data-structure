@@ -1,7 +1,7 @@
 ### 算法
 ### 数组
 把数据码成一排存放
-<img src="/Users/codoon/Pictures/1-1.png"/>
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/1-1.png"/>
 ```
 数组最大的优点：快速查询，scores[2]
 数组最好应用于“索引有语意”的情况，但并非所有有语意的情况都适用于数组，如身份证号，原因，太大
@@ -402,7 +402,7 @@ void add(E)
 void remove(E)
 boolean contains(E)
 int getSize()
-boolean isEmpty
+boolean isEmpty()
 ```
 h代表树的高度
 ```
