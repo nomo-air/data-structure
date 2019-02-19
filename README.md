@@ -1,7 +1,7 @@
 ### 算法
 ### 数组
 把数据码成一排存放
-![](https://github.com/nomo-air/data-structure/blob/master/images/1-1.png)
+![images](https://github.com/nomo-air/data-structure/blob/master/images/1-1.png)
 
 ```
 数组最大的优点：快速查询，scores[2]
