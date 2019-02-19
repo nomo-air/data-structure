@@ -8,14 +8,13 @@
 数组最好应用于“索引有语意”的情况，但并非所有有语意的情况都适用于数组，如身份证号，原因，太大
 ```
 #### 向指定位置添加元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/1-2.png"/>
-
+![数组](https://github.com/nomo-air/data-structure/blob/master/images/1-2.png)
 
 元素后移
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/1-3.png"/>
+![数组](https://github.com/nomo-air/data-structure/blob/master/images/1-3.png)
 
 #### 删除指定位置元素
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/1-4.png"/>
+![数组](https://github.com/nomo-air/data-structure/blob/master/images/1-4.png)
 
 这里的第二个100可以置空，可以不置空，不置空也是安全的，因为它无法被访问到
 <img src="https://github.com/nomo-air/data-structure/blob/master/images/1-5.png"/>
