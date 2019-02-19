@@ -1,28 +1,27 @@
 ### 算法
 ### 数组
 把数据码成一排存放
-![数组](https://github.com/nomo-air/data-structure/blob/master/images/1-1.png)
+![把数据码成一排存放](https://github.com/nomo-air/data-structure/blob/master/images/1-1.png)
 
 ```
 数组最大的优点：快速查询，scores[2]
 数组最好应用于“索引有语意”的情况，但并非所有有语意的情况都适用于数组，如身份证号，原因，太大
 ```
 #### 向指定位置添加元素
-![数组](https://github.com/nomo-air/data-structure/blob/master/images/1-2.png)
+![向指定位置添加元素](https://github.com/nomo-air/data-structure/blob/master/images/1-2.png)
 
 元素后移
-![数组](https://github.com/nomo-air/data-structure/blob/master/images/1-3.png)
+![元素后移](https://github.com/nomo-air/data-structure/blob/master/images/1-3.png)
 
 #### 删除指定位置元素
-![数组](https://github.com/nomo-air/data-structure/blob/master/images/1-4.png)
+![删除指定位置元素](https://github.com/nomo-air/data-structure/blob/master/images/1-4.png)
 
 这里的第二个100可以置空，可以不置空，不置空也是安全的，因为它无法被访问到
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/1-5.png"/>
+![数组](https://github.com/nomo-air/data-structure/blob/master/images/1-5.png)
 
 #### 动态扩容
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/1-6.png"/>
-
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/1-7.png"/>
+![动态扩容](https://github.com/nomo-air/data-structure/blob/master/images/1-6.png)
+![动态扩容](https://github.com/nomo-air/data-structure/blob/master/images/1-7.png)
 
 #### 数组简单的复杂度分析
 添加操作
