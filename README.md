@@ -868,7 +868,7 @@ https://planetmath.org/goodhashtableprimes
 #### 链地址法
 <img src="https://github.com/nomo-air/data-structure/blob/master/images/52-1.png"   />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-2.png"   />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-2.png" width="50%" height="50%" />
 
 #### 复杂度分析
 ```
