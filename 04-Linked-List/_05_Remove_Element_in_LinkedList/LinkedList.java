@@ -130,6 +130,7 @@ public class LinkedList<E> {
         for (int i = 0; i < index; i++) {
             prev = prev.next;
         }
+        // prev.next = prev.next 这相当于移动指针
         Node retNode = prev.next;
         prev.next = retNode.next;
         retNode.next = null;

@@ -275,7 +275,7 @@ public class BST<E extends Comparable<E>> {
 
             // 找到比待删除节点大的最小节点, 即待删除节点右子树的最小节点
             // 用这个节点顶替待删除节点的位置
-            // （这里找的是后继successor，也可以用前驱predecessor）
+            // （这里找的是后继successor，也可以用前驱predecessor,前驱指在遍历顺序中前一个节点，后继为后一个点)
             Node successor = minimum(node.right);
             successor.right = removeMin(node.right);
             // 在removeMin中size--，其实这个值没有丢，这里的值赋给了successor，这里应该写成 size++
