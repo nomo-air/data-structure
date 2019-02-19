@@ -866,9 +866,9 @@ Splay Tree
 扩容M选择
 https://planetmath.org/goodhashtableprimes
 #### 链地址法
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-1.png"   />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-1.png" width="10%" height="10%"  />
 
-<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-2.png" width="50%" height="50%" />
+<img src="https://github.com/nomo-air/data-structure/blob/master/images/52-2.png" width="10%" height="10%" />
 
 #### 复杂度分析
 ```
