@@ -21,6 +21,7 @@
 
 #### 动态扩容
 ![动态扩容](https://github.com/nomo-air/data-structure/blob/master/images/1-6.png)
+<br>
 ![动态扩容](https://github.com/nomo-air/data-structure/blob/master/images/1-7.png)
 
 #### 数组简单的复杂度分析
