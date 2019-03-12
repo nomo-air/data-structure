@@ -2,6 +2,9 @@ package linkedlist;
 
 public class LinkedList<E> {
 
+    private Node head;
+    private int size;
+
     private class Node {
         public E e;
         public Node next;
@@ -24,9 +27,6 @@ public class LinkedList<E> {
             return e.toString();
         }
     }
-
-    private Node head;
-    private int size;
 
     public LinkedList() {
         head = null;
@@ -63,9 +63,9 @@ public class LinkedList<E> {
             addFirst(e);
         } else {
             Node prev = head;
-            for (int i = 0; i < index - 1; i++)
+            for (int i = 0; i < index - 1; i++) {
                 prev = prev.next;
-
+            }
 //            Node node = new Node(e);
 //            node.next = prev.next;
 //            prev.next = node;
