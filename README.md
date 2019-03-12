@@ -1,7 +1,8 @@
 ### 算法
 ### 数组
 把数据码成一排存放
-<img src="http://flowerman.cc/data-structure/1-1.png" width = 80% width = 80% />
+
+<img src="http://flowerman.cc/data-structure/1-1.png" width = 80% height = 80% />
 ---
 ```
 数组最大的优点：快速查询，scores[2]
@@ -12,6 +13,7 @@
 <img src="http://flowerman.cc/data-structure/1-2.png" width = 80% />
 ---
 元素后移
+
 <img src="http://flowerman.cc/data-structure/1-3.png" width = 80% />
 ---
 
@@ -83,6 +85,7 @@ removeLast时resize过于着急（Eager）
 这一端称为栈顶
 ```
 <img src="http://flowerman.cc/data-structure/2-1.png" width = 20% height = 20% />
+
 ```
 栈是一种后进先出的数据结构
 Last In First Out（LIFO）
@@ -121,10 +124,12 @@ boolean isEmpty()   O(1)
 ---
 
 删除队首元素（a）
+
 <img src="http://flowerman.cc/data-structure/4-1.png" width = 80% />
 ---
 
 删除后
+
 <img src="http://flowerman.cc/data-structure/4-2.png" width = 80% />
 ---
 
@@ -141,6 +146,7 @@ boolean isEmpty()   O(1)
 ### 循环队列
 
 front == tail 队列为空
+
 <img src="http://flowerman.cc/data-structure/5-1.png" width = 80%  />
 ---
 
@@ -191,20 +197,20 @@ class Node {
 
 在索引为2的地方添加元素666<br>
 关键点在于找到要添加节点的前一个节点
-<img src="http://flowerman.cc/data-structure/6-4.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/6-4.png" width = 70% />
 ---
 
-<img src="http://flowerman.cc/data-structure/6-5.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/6-5.png" width = 70% />
 ---
 
-<img src="http://flowerman.cc/data-structure/6-6.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/6-6.png" width = 70% />
 ---
 
-<img src="http://flowerman.cc/data-structure/6-7.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/6-7.png" width = 70% />
 ---
 
 顺序很重要
-<img src="http://flowerman.cc/data-structure/6-8.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/6-8.png" width = 70% />
 ---
 
 #### 链表(虚拟头节点)
@@ -216,6 +222,7 @@ class Node {
 ---
 
 链表元素删除常见的错误
+
 <img src="http://flowerman.cc/data-structure/7-3.png" width = 80% />
 ---
 
@@ -225,12 +232,15 @@ class Node {
     addLast(e)          O(n)
     addFirst            O(1)
     add(index,e)        O(n/2) = O(n)
+    
 删除操作                 O(n)
     removeLast(e)       O(n)
     removeFirst(e)      O(1)
     remove(index,e)     O(n/2) = O(n)
+    
 修改操作                 O(n)
     set(index,e)        O(n)
+    
 查找操作                 O(n)
     get(e)              O(n)
     contains(e)         O(n)
@@ -239,6 +249,7 @@ class Node {
 
 ---
 什么情况下使用链表
+
 <img src="http://flowerman.cc/data-structure/7-4.png" width = 80% />
 ---
 
@@ -246,6 +257,7 @@ class Node {
 ---
 
 使用链表实现队列
+
 <img src="http://flowerman.cc/data-structure/8-1.png" width = 80% />
 ---
 
@@ -284,7 +296,8 @@ class Node {
 ```
 ---
 链表有天然的递归性质
-<img src="http://flowerman.cc/data-structure/10-1.png" width = 80% />
+
+<img src="http://flowerman.cc/data-structure/10-1.png" width = 60% />
 ---
 
 #### 删除链表中元素
@@ -312,7 +325,7 @@ class Node {
 }
 ```
 ---
-<img src="http://flowerman.cc/data-structure/13-1.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/13-1.png" width = 60% />
 ---
 
 #### 二分搜索树
@@ -326,11 +339,11 @@ Binary Search Tree
 储存的元素必须有可比较性    
 ```
 ---
-<img src="http://flowerman.cc/data-structure/14-1.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/14-1.png" width = 60% />
 ---
 
 #### 二分搜索树添加元素
-<img src="http://flowerman.cc/data-structure/14-2.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/14-2.png" width = 70% />
 ---
 ```
 我们的二分搜索树不包含重复元素
@@ -340,6 +353,8 @@ Binary Search Tree
 ```
 
 #### 二分搜索树的遍历
+遍历时间复杂度：O(n)
+
 <img src="http://flowerman.cc/data-structure/14-3.png" width = 80% />
 ---
 
@@ -379,7 +394,8 @@ Binary Search Tree
 #### 深度优先和广度优先
 ---
 二分搜索树的最小值和最大值
-<img src="http://flowerman.cc/data-structure/17-1.png" width = 80% />
+
+<img src="http://flowerman.cc/data-structure/17-1.png" width = 70% />
 ---
 
 #### 二分搜索树删除节点
@@ -400,7 +416,7 @@ s -> left = d -> left
 <img src="http://flowerman.cc/data-structure/18-1.png" width = 40% />
 
 ---
-<img src="http://flowerman.cc/data-structure/18-2.png" width = 40% />
+<img src="http://flowerman.cc/data-structure/18-2.png" width = 38% />
 
 ---
 或者找s的前驱
@@ -424,15 +440,15 @@ select // 排名第10的元素是谁？
 ```
 
 #### 维护size的二分搜索树
-<img src="http://flowerman.cc/data-structure/20-1.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/20-1.png" width = 60% />
 ---
 
 #### 维护depth的二分搜索树
-<img src="http://flowerman.cc/data-structure/21-1.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/21-1.png" width = 60% />
 ---
 
 #### 支持重复元素的二分搜索树
-<img src="http://flowerman.cc/data-structure/22-1.png" width = 80% />
+<img src="http://flowerman.cc/data-structure/22-1.png" width = 60% />
 ---
 
 ### 前驱 & 后继
@@ -569,6 +585,7 @@ boolean isEmpty()
 ```
 ---
 用数组储存二叉堆
+
 <img src="http://flowerman.cc/data-structure/25-2.png" width = 80% />
 ---
 ```
@@ -607,14 +624,17 @@ Sift Down // 数据下沉
 
 ---
 取出根节点62
+
 <img src="http://flowerman.cc/data-structure/27-1.png" width = 80% />
 
 ---
 从左向右的叶子节点16替换根节点62
+
 <img src="http://flowerman.cc/data-structure/27-2.png" width = 80% />
 
 ---
 根节点16与两个孩子节点比较，如果根节点比孩子节点中最大的节点还小，根节点16就和最大的孩子节点52交换位置
+
 <img src="http://flowerman.cc/data-structure/27-3.png" width = 80% />
 
 ---
@@ -634,7 +654,7 @@ replace // 取出最大元素后，放入一个新元素
 heapify（堆化） // 将任意数组整理成堆的形状
 
 ```
-将数组看成一个二叉堆，找到最后一个非叶子节点，也就是随后一个叶子节点的父亲节点，从这个节点到根节点，一次做Sift Down
+将数组看成一个二叉堆，找到最后一个非叶子节点，也就是随后一个叶子节点的父亲节点，从这个节点到根节点，依次做Sift Down
 ```
 ---
 <img src="http://flowerman.cc/data-structure/28-1.png" width = 80% />
@@ -649,11 +669,14 @@ heapify的过程，算法复杂度为O(n)  // todo.这个有点复杂，我还�
 
 #### d插堆
 d-ary heap
+
 <img src="http://flowerman.cc/data-structure/29-1.png" width = 80% />
 
+```
 索引堆
 二项堆
 斐波那契堆
+```
 
 ### 线段树 | 区间树
 Segment Tree
@@ -663,27 +686,30 @@ Segment Tree
 
 ---
 <img src="http://flowerman.cc/data-structure/30-2.png" width = 80% />
+
 ```
 线段树不是完全二叉树
 线段树是平衡二叉树
 堆也是平衡二叉树
 依然可以用数组来表示，4倍足够
 ```
+
 ```
         使用数组实现          使用线段树
 更新     O(n)                O(logn)
 查询     O(n)                O(logn)  
 ```
-
 ---
 懒惰更新
+
 <img src="http://flowerman.cc/data-structure/31-1.png" width = 80% />
-
 ---
+
 二维线段树
-<img src="http://flowerman.cc/data-structure/32-1.png" width = 80% />
 
+<img src="http://flowerman.cc/data-structure/32-1.png" width = 80% />
 ---
+
 动态线段树
 关注[5-16]
 <img src="http://flowerman.cc/data-structure/33-1.png" width = 80% />
@@ -746,6 +772,7 @@ Ternary Search Trie
 
 ---
 查找dog
+
 <img src="http://flowerman.cc/data-structure/36-1.png" width = 50% />
 ---
 ```
@@ -781,6 +808,7 @@ isConnected(p, q) -> find(p) == find(q) // 两个元素是否相连
 
 ---
 union(1, 4)
+
 <img src="http://flowerman.cc/data-structure/37-2.png" width = 80% />
 
 ```
@@ -794,6 +822,7 @@ isConnected(p, q)		 O(1)
 
 ---
 union(4, 3)
+
 <img src="http://flowerman.cc/data-structure/38-1.png" width = 80% />
 
 ---
@@ -805,6 +834,7 @@ sz[i] // 记录每棵树节点个数的大小
 
 ---
 union(4, 9)
+
 <img src="http://flowerman.cc/data-structure/39-1.png" width = 70% />
 
 ---
@@ -818,7 +848,7 @@ union(4, 9)
 rank[i] // 表示根节点为i的树的高度
 
 ---
-union(4, 2)
+union(4, 7)
 <img src="http://flowerman.cc/data-structure/40-1.png" width = 70% />
 
 ---
@@ -832,7 +862,8 @@ Path Compression
 
 ---
 find(4) // 在查询时执行压缩
-<img src="http://flowerman.cc/data-structure/41-2.png" width = 70% />
+
+<img src="http://flowerman.cc/data-structure/41-2.png" width = 50% />
 
 ---
 <img src="http://flowerman.cc/data-structure/41-3.png" width = 70% />
@@ -858,6 +889,7 @@ AVL树的左旋转和右旋转
 
 #### 右旋转
 插入的节点在左孩子的左侧（LL）
+
 <img src="http://flowerman.cc/data-structure/43-1.png" width = 60% />
 
 ---
@@ -868,6 +900,7 @@ AVL树的左旋转和右旋转
 
 #### 左旋转
 插入的节点在右孩子的右侧（RR）
+
 <img src="http://flowerman.cc/data-structure/44-1.png" width = 80% />
 
 ---
@@ -878,13 +911,15 @@ AVL树的左旋转和右旋转
 
 ---
 插入的节点在左孩子的右侧（LR）
+
 <img src="http://flowerman.cc/data-structure/45-1.png" width = 70% />
 
 ---
-<img src="http://flowerman.cc/data-structure/45-2.png" width = 70% />
+<img src="http://flowerman.cc/data-structure/45-2.png" width = 60% />
 
 ---
 插入的节点在右孩子的左侧（RL）
+
 <img src="http://flowerman.cc/data-structure/46-1.png" width = 70% />
 
 ---
@@ -898,14 +933,17 @@ AVL树的左旋转和右旋转
 每个节点有两个孩子或三个孩子 
 ```
 如果插入3-节点
+
 <img src="http://flowerman.cc/data-structure/47-1.png" width = 80% />
 
 ---
 如果插入3-节点，父亲节点为2-节点
+
 <img src="http://flowerman.cc/data-structure/47-2.png" width = 100% />
 
 ---
 如果插入3-节点，父亲节点为3-节点
+
 <img src="http://flowerman.cc/data-structure/47-3.png" width = 100% />
 
 ### 绝对平衡树
@@ -926,22 +964,27 @@ AVL树的左旋转和右旋转
 左倾红黑树
 ```
 向红黑树添加元素
+
 <img src="http://flowerman.cc/data-structure/48-1.png" width = 20% />
 
 ---
 此时需要进行左旋转
+
 <img src="http://flowerman.cc/data-structure/48-2.png" width = 20% />
 
 ---
 向红黑树中的3-node添加元素
+
 <img src="http://flowerman.cc/data-structure/48-3.png" width = 50% />
 
 ---
 颜色反转（flipColors）
+
 <img src="http://flowerman.cc/data-structure/48-4.png" width = 80% />
 
 ---
 右旋转
+
 <img src="http://flowerman.cc/data-structure/48-5.png" width = 80% />
 
 ---
@@ -958,14 +1001,17 @@ AVL树的左旋转和右旋转
 
 ---
 颜色反转
+
 <img src="http://flowerman.cc/data-structure/48-10.png" width = 80% />
 
 ---
 红黑树与2-3树
-<img src="http://flowerman.cc/data-structure/49-1.png" width = 80% />
+
+<img src="http://flowerman.cc/data-structure/49-1.png" width = 100% />
 
 ---
 左旋转
+
 <img src="http://flowerman.cc/data-structure/50-1.png" width = 40% />
 
 ---
@@ -982,6 +1028,7 @@ AVL树的左旋转和右旋转
 
 ---
 添加元素统一方法
+
 <img src="http://flowerman.cc/data-structure/51-1.png" width = 80% />
 ---
 

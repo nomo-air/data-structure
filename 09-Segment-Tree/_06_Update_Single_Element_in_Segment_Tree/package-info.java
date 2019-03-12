@@ -1,2 +1,0 @@
-package _06_Update_Single_Element_in_Segment_Tree;
-// 线段树中的更新操作

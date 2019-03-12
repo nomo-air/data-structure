@@ -1,2 +1,0 @@
-package _09_Non_Recursion_Preorder_Traverse_in_BST;
-// 二分搜索树前序遍历的非递归实现(其实是深度优先)

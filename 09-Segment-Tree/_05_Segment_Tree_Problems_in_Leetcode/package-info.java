@@ -1,2 +1,0 @@
-package _05_Segment_Tree_Problems_in_Leetcode;
-// Leetcode上线段树相关的问题
