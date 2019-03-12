@@ -1,3 +1,5 @@
+package stacks;
+
 public interface Stack<E> {
 
     // 获取栈中元素个数

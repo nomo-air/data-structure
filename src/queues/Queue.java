@@ -1,3 +1,5 @@
+package queues;
+
 public interface Queue<E> {
 
     // 获取对列中元素个数
