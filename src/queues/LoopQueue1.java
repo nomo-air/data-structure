@@ -1,4 +1,5 @@
 package queues;
+
 // 在这一版LoopQueue的实现中，我们将不浪费那1个空间：）
 public class LoopQueue1<E> implements Queue<E> {
     private E[] data;
@@ -46,32 +47,32 @@ public class LoopQueue1<E> implements Queue<E> {
 
     @Override
     public E dequeue() {
-
-        if (isEmpty())
+        if (isEmpty()) {
             throw new IllegalArgumentException("Cannot dequeue from an empty queue.");
-
+        }
         E ret = data[front];
         data[front] = null;
         front = (front + 1) % data.length;
         size--;
-        if (size == getCapacity() / 4 && getCapacity() / 2 != 0)
+        if (size == getCapacity() / 4 && getCapacity() / 2 != 0) {
             resize(getCapacity() / 2);
+        }
         return ret;
     }
 
     @Override
     public E getFront() {
-        if (isEmpty())
+        if (isEmpty()) {
             throw new IllegalArgumentException("Queue is empty.");
+        }
         return data[front];
     }
 
     private void resize(int newCapacity) {
-
         E[] newData = (E[]) new Object[newCapacity];
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++) {
             newData[i] = data[(i + front) % data.length];
-
+        }
         data = newData;
         front = 0;
         tail = size;
@@ -85,8 +86,9 @@ public class LoopQueue1<E> implements Queue<E> {
         // 注意，我们的循环遍历打印队列的逻辑也有相应的更改 :-)
         for (int i = 0; i < size; i++) {
             res.append(data[(front + i) % data.length]);
-            if ((i + front + 1) % data.length != tail)
+            if ((i + front + 1) % data.length != tail) {
                 res.append(", ");
+            }
         }
         res.append("] tail");
         return res.toString();
