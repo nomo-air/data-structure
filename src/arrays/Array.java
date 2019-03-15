@@ -50,6 +50,7 @@ public class Array<E> {
         size++;
     }
 
+
     // 向所有元素后添加一个新元素
     public void addLast(E e) {
         add(size, e);
@@ -69,12 +70,12 @@ public class Array<E> {
     }
 
     // 获取数组第一个元素
-    public E getFirst(){
+    public E getFirst() {
         return get(0);
     }
 
     // 获取数组最后一个元素
-    public E getLast(){
+    public E getLast() {
         return get(size - 1);
     }
 
@@ -164,4 +165,34 @@ public class Array<E> {
         }
         data = newData;
     }
+
+    public static void main(String[] args) {
+
+        Array<Integer> arr = new Array<>();
+        for (int i = 0; i < 10; i++) {
+            arr.addLast(i);
+        }
+        System.out.println(arr);
+
+        arr.add(1, 100);
+        System.out.println(arr);
+
+        arr.addFirst(-1);
+        System.out.println(arr);
+
+        arr.remove(2);
+        System.out.println(arr);
+
+        arr.removeElement(4);
+        System.out.println(arr);
+
+        arr.removeFirst();
+        System.out.println(arr);
+
+        for (int i = 0; i < 4; i++) {
+            arr.removeFirst();
+            System.out.println(arr);
+        }
+    }
+
 }

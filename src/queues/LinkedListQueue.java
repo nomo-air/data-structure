@@ -59,14 +59,15 @@ public class LinkedListQueue<E> implements Queue<E> {
 
     @Override
     public E dequeue() {
-        if (isEmpty())
+        if (isEmpty()) {
             throw new IllegalArgumentException("Cannot dequeue from an empty queue.");
-
+        }
         Node retNode = head;
-        head = head.next;
         retNode.next = null;
-        if (head == null)
+        head = head.next;
+        if (head == null) {
             tail = null;
+        }
         size--;
         return retNode.e;
     }
@@ -91,5 +92,4 @@ public class LinkedListQueue<E> implements Queue<E> {
         res.append("NULL tail");
         return res.toString();
     }
-
 }
