@@ -2,7 +2,8 @@ package queues;
 
 public class LoopQueue<E> implements Queue<E> {
     private E[] data;
-    private int front, tail;
+    private int front;
+    private int tail;
     private int size;
 
     public LoopQueue(int capacity) {

@@ -4,7 +4,8 @@ package queues;
 public class LoopQueue2<E> implements Queue<E> {
 
     private E[] data;
-    private int front, tail;
+    private int front;
+    private int tail;
 
     public LoopQueue2(int capacity) {
         data = (E[]) new Object[capacity + 1];

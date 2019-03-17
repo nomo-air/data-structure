@@ -3,7 +3,8 @@ package queues;
 // 在这一版LoopQueue的实现中，我们将不浪费那1个空间：）
 public class LoopQueue1<E> implements Queue<E> {
     private E[] data;
-    private int front, tail;
+    private int front;
+    private int tail;
     private int size;
 
     public LoopQueue1(int capacity) {
@@ -35,11 +36,10 @@ public class LoopQueue1<E> implements Queue<E> {
 
     @Override
     public void enqueue(E e) {
-
         // 注意，我们不再使用front和tail之间的关系来判断队列是否为满，而直接使用size
-        if (size == getCapacity())
+        if (size == getCapacity()) {
             resize(getCapacity() * 2);
-
+        }
         data[tail] = e;
         tail = (tail + 1) % data.length;
         size++;
