@@ -81,7 +81,7 @@ public class MaxHeap<E extends Comparable<E>> {
 
         while (leftChild(k) < data.getSize()) {
             int j = leftChild(k); // 在此轮循环中,data[k]和data[j]交换位置
-            if (j + 1 < data.getSize() && data.get(j + 1).compareTo(data.get(j)) > 0) {
+            if (j + 1 < data.getSize() && data.get(j + 1).compareTo(data.get(j)) > 0) { // j+1是右孩子
                 j++;
             }
             // data[j] 是 leftChild 和 rightChild 中的最大值
