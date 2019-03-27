@@ -1,4 +1,4 @@
-package segmenttree;
+package tree;
 
 public class SegmentTree<E> {
 

@@ -6,6 +6,9 @@ import java.util.ArrayList;
 
 public class AVLTree<K extends Comparable<K>, V> {
 
+    private Node root;
+    private int size;
+
     private class Node {
         public K key;
         public V value;
@@ -20,9 +23,6 @@ public class AVLTree<K extends Comparable<K>, V> {
             height = 1;
         }
     }
-
-    private Node root;
-    private int size;
 
     public AVLTree() {
         root = null;
@@ -102,15 +102,12 @@ public class AVLTree<K extends Comparable<K>, V> {
     private Node rightRotate(Node y) {
         Node x = y.left;
         Node T3 = x.right;
-
         // 向右旋转过程
         x.right = y;
         y.left = T3;
-
         // 更新height
         y.height = Math.max(getHeight(y.left), getHeight(y.right)) + 1;
         x.height = Math.max(getHeight(x.left), getHeight(x.right)) + 1;
-
         return x;
     }
 
@@ -145,12 +142,10 @@ public class AVLTree<K extends Comparable<K>, V> {
     // 向以node为根的二分搜索树中插入元素(key, value)，递归算法
     // 返回插入新节点后二分搜索树的根
     private Node add(Node node, K key, V value) {
-
         if (node == null) {
             size++;
             return new Node(key, value);
         }
-
         if (key.compareTo(node.key) < 0) {
             node.left = add(node.left, key, value);
         } else if (key.compareTo(node.key) > 0) {
@@ -158,42 +153,34 @@ public class AVLTree<K extends Comparable<K>, V> {
         } else { // key.compareTo(node.key) == 0
             node.value = value;
         }
-
         // 更新height
         node.height = 1 + Math.max(getHeight(node.left), getHeight(node.right));
-
         // 计算平衡因子
         int balanceFactor = getBalanceFactor(node);
-
         // 平衡维护
         // LL
         if (balanceFactor > 1 && getBalanceFactor(node.left) >= 0) {
             return rightRotate(node);
         }
-
         // RR
         if (balanceFactor < -1 && getBalanceFactor(node.right) <= 0) {
             return leftRotate(node);
         }
-
         // LR
         if (balanceFactor > 1 && getBalanceFactor(node.left) < 0) {
             node.left = leftRotate(node.left);
             return rightRotate(node);
         }
-
         // RL
         if (balanceFactor < -1 && getBalanceFactor(node.right) > 0) {
             node.right = rightRotate(node.right);
             return leftRotate(node);
         }
-
         return node;
     }
 
     // 返回以node为根节点的二分搜索树中，key所在的节点
     private Node getNode(Node node, K key) {
-
         if (node == null) {
             return null;
         }
@@ -263,7 +250,6 @@ public class AVLTree<K extends Comparable<K>, V> {
                 // return rightNode;
                 retNode = rightNode;
             }
-
             // 待删除节点右子树为空的情况
             else if (node.right == null) {
                 Node leftNode = node.left;
@@ -272,7 +258,6 @@ public class AVLTree<K extends Comparable<K>, V> {
                 // return leftNode;
                 retNode = leftNode;
             }
-
             // 待删除节点左右子树均不为空的情况
             else {
                 // 找到比待删除节点大的最小节点, 即待删除节点右子树的最小节点
@@ -281,9 +266,7 @@ public class AVLTree<K extends Comparable<K>, V> {
                 //successor.right = removeMin(node.right);
                 successor.right = remove(node.right, successor.key);
                 successor.left = node.left;
-
                 node.left = node.right = null;
-
                 // return successor;
                 retNode = successor;
             }
@@ -294,10 +277,8 @@ public class AVLTree<K extends Comparable<K>, V> {
         }
         // 更新height
         retNode.height = 1 + Math.max(getHeight(retNode.left), getHeight(retNode.right));
-
         // 计算平衡因子
         int balanceFactor = getBalanceFactor(retNode);
-
         // 平衡维护
         // LL
         if (balanceFactor > 1 && getBalanceFactor(retNode.left) >= 0) {
@@ -312,7 +293,6 @@ public class AVLTree<K extends Comparable<K>, V> {
             retNode.left = leftRotate(retNode.left);
             return rightRotate(retNode);
         }
-
         // RL
         if (balanceFactor < -1 && getBalanceFactor(retNode.right) > 0) {
             retNode.right = rightRotate(retNode.right);
