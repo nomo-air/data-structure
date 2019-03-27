@@ -1,6 +1,6 @@
 package set.linkedlistset;
 
-import set.FileOperation;
+import util.FileOperation;
 import set.Set;
 
 import java.util.ArrayList;
