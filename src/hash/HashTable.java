@@ -9,7 +9,7 @@ public class HashTable<K extends Comparable<K>, V> {
             49157, 98317, 196613, 393241, 786433, 1572869, 3145739, 6291469,
             12582917, 25165843, 50331653, 100663319, 201326611, 402653189, 805306457, 1610612741};
 
-    private static final int upperTol = 10;
+    private static final int upperTol = 10;  // 每一个哈希地址冲突的上界
     private static final int lowerTol = 2;
     private int capacityIndex = 0;
 
@@ -41,7 +41,6 @@ public class HashTable<K extends Comparable<K>, V> {
         } else {
             map.put(key, value);
             size++;
-
             if (size >= upperTol * M && capacityIndex + 1 < capacity.length) {
                 capacityIndex++;
                 resize(capacity[capacityIndex]);

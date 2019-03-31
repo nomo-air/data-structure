@@ -1,5 +1,6 @@
 package tree;
 
+import arrays.Array;
 import util.FileOperation;
 
 import java.util.ArrayList;
@@ -12,7 +13,8 @@ public class AVLTree<K extends Comparable<K>, V> {
     private class Node {
         public K key;
         public V value;
-        public Node left, right;
+        public Node left;
+        public Node right;
         public int height;
 
         public Node(K key, V value) {
@@ -247,7 +249,6 @@ public class AVLTree<K extends Comparable<K>, V> {
                 Node rightNode = node.right;
                 node.right = null;
                 size--;
-                // return rightNode;
                 retNode = rightNode;
             }
             // 待删除节点右子树为空的情况
@@ -255,7 +256,6 @@ public class AVLTree<K extends Comparable<K>, V> {
                 Node leftNode = node.left;
                 node.left = null;
                 size--;
-                // return leftNode;
                 retNode = leftNode;
             }
             // 待删除节点左右子树均不为空的情况
@@ -263,11 +263,9 @@ public class AVLTree<K extends Comparable<K>, V> {
                 // 找到比待删除节点大的最小节点, 即待删除节点右子树的最小节点
                 // 用这个节点顶替待删除节点的位置
                 Node successor = minimum(node.right);
-                //successor.right = removeMin(node.right);
                 successor.right = remove(node.right, successor.key);
                 successor.left = node.left;
                 node.left = node.right = null;
-                // return successor;
                 retNode = successor;
             }
         }

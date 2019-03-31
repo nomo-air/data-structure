@@ -15,7 +15,8 @@ public class RBTree<K extends Comparable<K>, V> {
     private class Node {
         public K key;
         public V value;
-        public Node left, right;
+        public Node left;
+        public Node right;
         public boolean color;
 
         public Node(K key, V value) {
@@ -89,7 +90,6 @@ public class RBTree<K extends Comparable<K>, V> {
 
     // 颜色翻转
     private void flipColors(Node node) {
-
         node.color = RED;
         node.left.color = BLACK;
         node.right.color = BLACK;
