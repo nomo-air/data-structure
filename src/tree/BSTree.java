@@ -5,6 +5,13 @@ import java.util.Queue;
 import java.util.Random;
 import java.util.Stack;
 
+/**
+ * 前序遍历：根结点 ---> 左子树 ---> 右子树
+ *
+ * 中序遍历：左子树---> 根结点 ---> 右子树
+ *
+ * 后序遍历：左子树 ---> 右子树 ---> 根结点
+ */
 public class BSTree<E extends Comparable<E>> {
 
     private Node root;
